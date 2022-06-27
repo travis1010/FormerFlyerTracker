@@ -25,5 +25,8 @@ export const styles = StyleSheet.create({
     fontSize: 24,
     fontWeight: '700',
     paddingRight: -2
+  },
+  seasonText: {
+    textAlign: 'center',
   }
 })

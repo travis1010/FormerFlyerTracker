@@ -18,6 +18,7 @@ export const styles = StyleSheet.create({
     height: 40,
     justifyContent: 'center',
     margin: 3,
+    marginTop: 12,
   },
 })
 
