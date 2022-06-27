@@ -1,7 +1,7 @@
+import * as React from 'react';
 import { View, Text } from 'react-native';
-import { useState } from 'react';
 import { styles } from './styles';
-import { Picker } from '@react-native-picker/picker';
+
 
 
 export default function PlayerCard(props) {

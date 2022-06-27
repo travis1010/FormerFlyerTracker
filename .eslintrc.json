@@ -1,0 +1,32 @@
+{
+    "env": {
+        "es2022": true,
+        "browser": true,
+        "react-native/react-native": true
+    },
+    "extends": [
+        "eslint:recommended",
+        "plugin:react/recommended"
+    ],
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true,
+            "experimentalObjectRestSpread": true
+        },
+        "ecmaVersion": 13,
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "react-native"
+    ],
+    "rules": {
+        "react/prop-types": "off"
+    },
+    "settings": {
+        "react": {
+            "version": "detect"
+        }
+    },
+    "parser": "@babel/eslint-parser"
+}

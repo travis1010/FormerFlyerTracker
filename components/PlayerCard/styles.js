@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native';
-import { TouchableWithoutFeedback } from 'react-native-web';
+
 
 export const styles = StyleSheet.create({
   text: {
