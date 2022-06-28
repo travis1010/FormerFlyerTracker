@@ -6,7 +6,7 @@ import Constants from 'expo-constants';
 export const styles = StyleSheet.create({
   container: {
     backgroundColor: '#292929',
-    paddingTop: Constants.statusBarHeight,
+    paddingTop: Constants.statusBarHeight + 5,
     flex: 1,
     alignItems: 'center',
   },

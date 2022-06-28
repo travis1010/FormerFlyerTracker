@@ -1,26 +1,41 @@
 import * as React from 'react';
-import { View } from 'react-native';
+import { Image, View } from 'react-native';
 import { useState } from 'react';
 import { styles } from './styles';
-import { Picker } from '@react-native-picker/picker';
+
+import SelectDropdown from 'react-native-select-dropdown'
+
 
 export default function PlayerSelector(props) {
   const [currentPlayer, setCurrentPlayer] = useState(props.currentPlayer)
+
 
   function updatePlayer(index) {
     setCurrentPlayer(props.players[index]);
     props.changeCurrentPlayer(index);
   }
 
+ 
+
   return (
-    <View style={styles.pickerView}>
-      <Picker selectedValue={currentPlayer.name} onValueChange={(value, index) => updatePlayer(index)} style={[styles.text, styles.picker]} dropdownIconColor= '#fff'>
-        {
-          props.players.map((player) => (
-            <Picker.Item label={player.name} value={player.name} key={player.id}/>
-          ))
-        }
-      </Picker>
+    <View>
+      <SelectDropdown
+        data={props.players}
+        onSelect={(selectedItem, index) => {
+          updatePlayer(index);
+        }}
+        buttonTextAfterSelection={(selectedItem, index) => {
+          return selectedItem["name"];
+        }}
+        rowTextForSelection={(item, index) => {
+          return item["name"];
+        }}
+        defaultButtonText="Select Player"
+        dropdownStyle={{width: 230, height: 320, borderRadius: 6, borderWidth: 1}}
+        buttonStyle={{width: 230, height: 40, borderRadius: 6, borderWidth: 1}}
+        renderDropdownIcon={() => (<Image source={require('../../assets/drop-down-arrow.png')} style={{width: 12, height: 12}} />)}
+      />
+    
     </View>
   );
 }
