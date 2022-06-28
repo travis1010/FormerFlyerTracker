@@ -43,5 +43,6 @@ export const styles = StyleSheet.create({
   },
   latestGameText: {
     textAlign: 'center',
+    fontSize: 20
   }
 })

@@ -31,8 +31,8 @@ export default function PlayerSelector(props) {
           return item["name"];
         }}
         defaultButtonText="Select Player"
-        dropdownStyle={{width: 230, height: 320, borderRadius: 6, borderWidth: 1}}
-        buttonStyle={{width: 230, height: 40, borderRadius: 6, borderWidth: 1}}
+        dropdownStyle={{width: 230, height: 320, borderRadius: 6, borderWidth: 1, backgroundColor: '#fff'}}
+        buttonStyle={{width: 230, height: 40, borderRadius: 6, borderWidth: 1, backgroundColor: '#fff', alignItems: 'center', justifyContent: 'center'}}
         renderDropdownIcon={() => (<Image source={require('../../assets/drop-down-arrow.png')} style={{width: 12, height: 12}} />)}
       />
     
