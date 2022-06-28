@@ -17,6 +17,7 @@ export const styles = StyleSheet.create({
   SeasonStats: {
     backgroundColor: 'rgba(232, 65, 14, 0.7)',
     borderWidth: 2,
+    marginBottom: 15,
   },
   line: {
     alignItems: 'baseline',
@@ -28,5 +29,6 @@ export const styles = StyleSheet.create({
   },
   seasonText: {
     textAlign: 'center',
+    fontSize: 20
   }
 })

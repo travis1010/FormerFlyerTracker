@@ -12,7 +12,8 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
   },
   PlayerCard: {
-    marginBottom: 10,
+    marginTop: 10,
+    marginBottom: 15,
     alignItems: 'center'
   },
   header: {

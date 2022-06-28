@@ -16,7 +16,7 @@ export const styles = StyleSheet.create({
     borderWidth: 1,
     justifyContent: 'center',
     backgroundColor: 'rgba(232, 65, 14, 0.7)',
-    marginBottom: 10,
+    marginBottom: 15,
   },
   row: {
     flexDirection: 'row',
